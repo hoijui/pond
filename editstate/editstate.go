@@ -72,7 +72,7 @@ func serialiseStruct(out io.Writer, v reflect.Value, t reflect.Type, context str
 				serialiseValue(out, f.Name, fv.Elem(), f.Type.Elem(), context, level, entities)
 			}
 		default:
-			panic(fmt.Sprintf("Don't know how to serialize %s", f))
+			panic(fmt.Sprintf("Don't know how to serialize %s", f.Name))
 		}
 	}
 }
