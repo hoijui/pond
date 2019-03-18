@@ -6,4 +6,7 @@
 /client/client
 /decrypt/decrypt
 /editstate/editstate
+/editstate/a
+/editstate/text
+/pathrewrite/pathrewrite
 /server/server
