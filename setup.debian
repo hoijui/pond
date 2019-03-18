@@ -1,0 +1,9 @@
+#!/bin/bash
+# Setup the system for building Pond on Debian testing (as of March 2019)
+
+# Install system dependencies
+sudo apt-get install golang git libgtk-3-dev libtspi-dev trousers tor mercurial pkg-config libgtkspell0 libgtkspell3-3-0 libgtkspell3-3-dev
+
+# Install Go-lang dependencies
+go get github.com/agl/ed25519 github.com/agl/go-gtk/gdk github.com/agl/go-gtk/gdkpixbuf github.com/agl/go-gtk/glib github.com/agl/go-gtk/gtk github.com/agl/go-gtk/gtkspell github.com/agl/pond/bbssig github.com/agl/pond/client/disk github.com/agl/pond/client/ratchet github.com/agl/pond/client/system github.com/agl/pond/client/tpm github.com/agl/pond/panda github.com/agl/pond/protos github.com/agl/pond/transport github.com/golang/protobuf/proto golang.org/x/crypto/curve25519 golang.org/x/crypto/nacl/box golang.org/x/crypto/nacl/secretbox golang.org/x/crypto/scrypt golang.org/x/crypto/ssh/terminal golang.org/x/net/proxy
+

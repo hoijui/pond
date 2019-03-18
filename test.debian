@@ -1,0 +1,15 @@
+#!/bin/bash
+# Unit-test Pond
+
+#test_parts=(client server editstate decrypt panda bbssig bn256cgo pathrewrite transport)
+test_parts="client editstate panda bbssig"
+
+# Test
+for tp in $test_parts
+do
+	echo "Testing $tp ..."
+	cd $tp
+	go test
+	cd ..
+done
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+# Build Pond
+
+#build_parts=(client server editstate decrypt panda bbssig bn256cgo pathrewrite transport)
+build_parts="client server editstate decrypt panda bbssig pathrewrite"
+
+# Build
+for bp in $build_parts
+do
+	echo "Building $bp ..."
+	cd $bp
+	go build
+	cd ..
+done
+
